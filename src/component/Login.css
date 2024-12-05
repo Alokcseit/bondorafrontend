@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2c3e50;
+  }
+  
+  .bondora {
+    height: 150px;
+    width: 200px;
+  }
+  
+  .login-content {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    background-image: url('/public/b.png'); /* Add your image path */
+    background-size: cover; /* Make the image cover the content area */
+    background-position: center; /* Center the image */
+    position: relative; /* Create a stacking context */
+  }
+  
+  .login-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Darken the background for less focus */
+    border-radius: 10px;
+  }
+  
+  .login h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form .MuiFormControl-root {
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: #3498db !important;
+    color: white !important;
+  }
+  
+  button:hover {
+    background-color: #2980b9 !important;
+  }
+  
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #3498db;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .login-content {
+      padding: 15px;
+    }
+  
+    .login h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
